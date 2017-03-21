@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Identifier>de-DE</Identifier> <!--According to https://msdn.microsoft.com/de-de/library/ee825488(v=cs.20).aspx-->
+	<Name>Deutsch</Name>
+	<Words>
+		<Word>
+			<Key>ChooseDirectory</Key>
+			<Value>Verzeichnis wählen</Value>
+		</Word>
+		<Word>
+			<Key>Directory</Key>
+			<Value>Verzeichnis:</Value>
+		</Word>
+		<Word>
+			<Key>Start</Key>
+			<Value>Start</Value>
+		</Word>
+		<Word>
+			<Key>FilesDeletedCaption</Key>
+			<Value>Dateien gelöscht</Value>
+		</Word>
+		<Word>
+			<Key>FilesDeletedText</Key>
+			<Value>Dateien gelöscht!</Value>
+		</Word>
+		<Word>
+			<Key>NoFolderCaption</Key>
+			<Value>Kein Ordner ausgewählt</Value>
+		</Word>
+		<Word>
+			<Key>NoFolderText</Key>
+			<Value>Es wurde kein Ordner ausgewählt!</Value>
+		</Word>
+	</Words>
+</Language>

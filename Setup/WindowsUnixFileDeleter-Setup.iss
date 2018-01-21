@@ -6,6 +6,7 @@
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "WindowsUnixFileDeleter.exe"
+#define MyPath "F:\TODO\C# und VB\WindowsUnixFileDeleter"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -24,10 +25,10 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-LicenseFile=C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\bin\Debug\License.txt
-OutputDir=C:\Users\tim\Desktop\WindowsUnixFileDeleter\Setup
+LicenseFile={#MyPath}\WindowsUnixFileDeleter\bin\Debug\License.txt
+OutputDir={#MyPath}\Setup
 OutputBaseFilename=WindowsUnixFileDeleter-Setup
-SetupIconFile=C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\DeleteFile.ico
+SetupIconFile={#MyPath}\WindowsUnixFileDeleter\DeleteFile.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -40,10 +41,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\bin\Debug\WindowsUnixFileDeleter.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\WindowsUnixFileDeleter\WindowsUnixFileDeleter\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MyPath}\WindowsUnixFileDeleter\bin\Debug\WindowsUnixFileDeleter.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\WindowsUnixFileDeleter\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\WindowsUnixFileDeleter\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\WindowsUnixFileDeleter\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

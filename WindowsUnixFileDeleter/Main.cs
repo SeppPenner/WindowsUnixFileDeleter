@@ -12,7 +12,7 @@ public partial class Main : Form
     private readonly ILanguageManager _lm = new LanguageManager();
     private readonly BackgroundWorker _worker = new BackgroundWorker();
     private double _countFiles;
-    private Language _lang;
+    private ILanguage _lang;
 
     public Main()
     {

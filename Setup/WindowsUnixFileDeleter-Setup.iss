@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "WindowsUnixFileDeleter"
-#define MyAppVersion "1.0.0.2"
+#define MyAppVersion "1.0.0.3"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "WindowsUnixFileDeleter.exe"
-#define MyPath "F:\TODO\C# und VB\WindowsUnixFileDeleter"
+#define MyPath "C:\Users\tim\Desktop\Updaten_Snyk\WindowsUnixFileDeleter"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.

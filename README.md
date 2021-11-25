@@ -2,7 +2,6 @@ WindowsUnixFileDeleter
 ======================
 
 WindowsUnixFileDeleter is a software to delete all UNIX files (e.g. .DS_STORE) from the Windows directory specified.
-The executable is written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/akh5nnhaf7yb262t?svg=true)](https://ci.appveyor.com/project/SeppPenner/windowsunixfiledeleter)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/WindowsUnixFileDeleter.svg)](https://github.com/SeppPenner/WindowsUnixFileDeleter/issues)

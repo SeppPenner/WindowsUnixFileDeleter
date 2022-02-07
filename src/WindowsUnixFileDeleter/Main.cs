@@ -34,7 +34,7 @@ namespace WindowsUnixFileDeleter
         /// <summary>
         /// The background worker.
         /// </summary>
-        private readonly BackgroundWorker worker = new BackgroundWorker();
+        private readonly BackgroundWorker worker = new();
 
         /// <summary>
         /// The files counter.
@@ -44,7 +44,7 @@ namespace WindowsUnixFileDeleter
         /// <summary>
         /// The language.
         /// </summary>
-        private ILanguage language;
+        private ILanguage? language;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Main"/> class.
@@ -237,6 +237,11 @@ namespace WindowsUnixFileDeleter
         /// <param name="e">The event args.</param>
         private void EvaluateResult(object sender, RunWorkerCompletedEventArgs e)
         {
+            if (this.language is null)
+            {
+                throw new ArgumentNullException(nameof(this.language), "The language wasn't properly set.");
+            }
+
             var filesDeletedCaption = this.language.GetWord("FilesDeletedCaption");
             var filesDeletedText = this.language.GetWord("FilesDeletedText");
             MessageBox.Show(this.filesCounter + @" " + filesDeletedText, filesDeletedCaption, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -275,6 +280,11 @@ namespace WindowsUnixFileDeleter
             if (!string.IsNullOrWhiteSpace(this.richTextBoxDirectory.Text))
             {
                 return true;
+            }
+
+            if (this.language is null)
+            {
+                throw new ArgumentNullException(nameof(this.language), "The language wasn't properly set.");
             }
 
             var noFolderSelectedCaption = this.language.GetWord("NoFolderSelectedCaption");
